@@ -85,7 +85,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
   // Header Bar Widget
   Widget _buildHeaderBar() {
     return Container(
-      height: 70,
+      height: 55,
       decoration: const BoxDecoration(
         color: Color(0xFF86C13C), // Green background
         boxShadow: [
@@ -101,7 +101,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
               'Regen Admin Panel',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 24,
+                fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
             ),

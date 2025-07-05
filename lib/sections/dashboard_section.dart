@@ -37,9 +37,9 @@ class DashboardSection extends StatelessWidget {
           Expanded(
             child: GridView.count(
               crossAxisCount: 3,
-              childAspectRatio: 1.4,
-              crossAxisSpacing: 20,
-              mainAxisSpacing: 20,
+              childAspectRatio: 3.0,
+              crossAxisSpacing: 24,
+              mainAxisSpacing: 24,
               children: const [
                 StatCard(
                   title: 'Total Articles',

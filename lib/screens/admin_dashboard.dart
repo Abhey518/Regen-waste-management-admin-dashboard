@@ -5,7 +5,7 @@ import '../sections/dashboard_section.dart';
 import '../sections/articles_section.dart';
 import '../sections/reports_section.dart';
 import '../sections/create_admin_section.dart';
-import '../sections/users_section.dart';
+import '../sections/garbage_pickup_section.dart';
 import '../sections/notifications_section.dart';
 import '../sections/kids_section.dart';
 import '../sections/user_feedback_section.dart';
@@ -28,7 +28,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
   List<Map<String, dynamic>> get _menuItems {
     final baseItems = [
       {'title': 'Dashboard', 'icon': Icons.dashboard},
-      {'title': 'Users', 'icon': Icons.people},
+      {'title': 'Garbage Pickup', 'icon': Icons.local_shipping},
       {'title': 'Notifications', 'icon': Icons.notifications},
       {'title': 'Articles', 'icon': Icons.article},
       {'title': 'Kids', 'icon': Icons.child_care},
@@ -37,7 +37,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
       {'title': 'Analytics', 'icon': Icons.analytics},
     ];
 
-    // Add "Create Admin" for super admins only (insert after Users)
+    // Add "Create Admin" for super admins only (insert after Garbage Pickup)
     if (widget.user.role == UserRole.superAdmin) {
       baseItems.insert(2, {
         'title': 'Create Admin',
@@ -245,8 +245,8 @@ class _AdminDashboardState extends State<AdminDashboard> {
     switch (_selectedMenuItem) {
       case 'Dashboard':
         return DashboardSection(user: widget.user);
-      case 'Users':
-        return const UsersSection();
+      case 'Garbage Pickup':
+        return const GarbagePickupSection();
       case 'Notifications':
         return const NotificationsSection();
       case 'Articles':

@@ -298,9 +298,9 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
                                 ),
                                 const SizedBox(height: 12),
 
-                                // Admin ID field (optional for demo)
+                                // Admin ID field
                                 const Text(
-                                  'Admin ID (Optional)',
+                                  'Admin ID',
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
@@ -311,7 +311,6 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
                                 TextField(
                                   controller: _adminIdController,
                                   decoration: InputDecoration(
-                                    hintText: 'Not required for demo access',
                                     prefixIcon: const Icon(
                                       Icons.person_outline,
                                     ),
@@ -334,9 +333,9 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
                                 ),
                                 const SizedBox(height: 12),
 
-                                // Password field (optional for demo)
+                                // Password field
                                 const Text(
-                                  'Password (Optional)',
+                                  'Password',
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
@@ -348,7 +347,6 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
                                   controller: _passwordController,
                                   obscureText: _obscurePassword,
                                   decoration: InputDecoration(
-                                    hintText: 'Not required for demo access',
                                     prefixIcon: const Icon(Icons.lock_outline),
                                     suffixIcon: IconButton(
                                       icon: Icon(

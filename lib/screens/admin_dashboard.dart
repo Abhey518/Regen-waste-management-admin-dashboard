@@ -6,9 +6,9 @@ import '../sections/articles_section.dart';
 import '../sections/reports_section.dart';
 import '../sections/create_admin_section.dart';
 import '../sections/users_section.dart';
-import '../sections/categories_section.dart';
-import '../sections/media_section.dart';
-import '../sections/comments_section.dart';
+import '../sections/notifications_section.dart';
+import '../sections/kids_section.dart';
+import '../sections/user_feedback_section.dart';
 import '../sections/analytics_section.dart';
 import '../sections/settings_section.dart';
 
@@ -28,18 +28,18 @@ class _AdminDashboardState extends State<AdminDashboard> {
   List<Map<String, dynamic>> get _menuItems {
     final baseItems = [
       {'title': 'Dashboard', 'icon': Icons.dashboard},
-      {'title': 'Articles', 'icon': Icons.article},
-      {'title': 'Reports', 'icon': Icons.report},
       {'title': 'Users', 'icon': Icons.people},
-      {'title': 'Categories', 'icon': Icons.category},
-      {'title': 'Media', 'icon': Icons.photo_library},
-      {'title': 'Comments', 'icon': Icons.comment},
+      {'title': 'Notifications', 'icon': Icons.notifications},
+      {'title': 'Articles', 'icon': Icons.article},
+      {'title': 'Kids', 'icon': Icons.child_care},
+      {'title': 'Reports', 'icon': Icons.report},
+      {'title': 'User Feedback', 'icon': Icons.feedback},
       {'title': 'Analytics', 'icon': Icons.analytics},
     ];
 
-    // Add "Create Admin" for super admins only
+    // Add "Create Admin" for super admins only (insert after Users)
     if (widget.user.role == UserRole.superAdmin) {
-      baseItems.insert(3, {
+      baseItems.insert(2, {
         'title': 'Create Admin',
         'icon': Icons.admin_panel_settings,
       });
@@ -245,20 +245,20 @@ class _AdminDashboardState extends State<AdminDashboard> {
     switch (_selectedMenuItem) {
       case 'Dashboard':
         return DashboardSection(user: widget.user);
-      case 'Articles':
-        return const ArticlesSection();
-      case 'Reports':
-        return const ReportsSection();
-      case 'Create Admin':
-        return const CreateAdminSection();
       case 'Users':
         return const UsersSection();
-      case 'Categories':
-        return const CategoriesSection();
-      case 'Media':
-        return const MediaSection();
-      case 'Comments':
-        return const CommentsSection();
+      case 'Notifications':
+        return const NotificationsSection();
+      case 'Articles':
+        return const ArticlesSection();
+      case 'Kids':
+        return const KidsSection();
+      case 'Reports':
+        return const ReportsSection();
+      case 'User Feedback':
+        return const UserFeedbackSection();
+      case 'Create Admin':
+        return const CreateAdminSection();
       case 'Analytics':
         return const AnalyticsSection();
       case 'Settings':

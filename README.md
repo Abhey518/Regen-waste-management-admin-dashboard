@@ -167,29 +167,6 @@ The admin panel is fully responsive and works on:
 
 The admin panel is designed to work with the ReGen app's notification service:
 
-```dart
-// Notification types supported
-enum NotificationType {
-  general,      // Default notifications
-  pickup,       // Waste pickup related
-  urgent,       // High priority alerts
-  announcement  // Official announcements
-}
-```
-
-## 🚀 Deployment
-
-### Build for Production
-```bash
-flutter build web --release --web-renderer canvaskit
-```
-
-### Deploy to Hosting
-- **Firebase Hosting**
-- **Netlify**
-- **Vercel**
-- **AWS S3 + CloudFront**
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -205,8 +182,7 @@ This project is proprietary software. All rights reserved.
 ## 📞 Support
 
 For support and questions:
-- **Email:** support@regen-app.com
-- **Documentation:** [Admin Panel Docs](https://docs.regen-app.com/admin)
+- **Email:** arunodaabey2001@gmail.com
 - **Issues:** GitHub Issues tab
 
 ## 🔄 Version History

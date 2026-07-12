@@ -8,13 +8,13 @@
 
 ## 👥 Group Members & Contributions
 
-| Name | Student ID | Implemented Module / Responsibilities |
-| :--- | :--- | :--- |
-| **Abeywardhana A. A. / Arunoda Abeywardhana** | `CT/2021/072` | **Project Lead**<br>• Guided & developed the frontend<br>• Developed the backend<br>• Guided & developed the admin dashboard<br>• Trained and developed the [garbage classification & proportion analyser model](https://github.com/Abhey518/Regen-object-detection-analyser) |
-| **Mohan D. / Divyaloshini Mohan** | `CT/2021/085` | **Frontend Layouts & Documentation Lead**<br>• Developed initial layouts for all application screens<br>• Led the project documentation |
-| **Pahalawaththa P. R. / Pasindu Randima** | `CT/2021/056` | **Backend & Database Lead**<br>• Guided and implemented backend integration<br>• Database management |
-| **Jayamal B. M. / Bhanuka Malitha** | `CT/2021/058` | **Design & Admin Frontend Layout**<br>• UI design<br>• Guided and developed poster design<br>• Developed initial layout for the Admin dashboard |
-| **Wijewardhana P. P. A. / Piyumi Wijewardhana** | `CT/2021/015` | **Design & Documentation Support**<br>• UI design<br>• Poster design<br>• Project documentation support |
+| Name                                            | Student ID    | Implemented Module / Responsibilities                                                                                                                                                                                                                                         |
+| :---------------------------------------------- | :------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Abeywardhana A. A. / Arunoda Abeywardhana**   | `CT/2021/072` | **Project Lead**<br>• Guided & developed the frontend<br>• Developed the backend<br>• Guided & developed the admin dashboard<br>• Trained and developed the [garbage classification & proportion analyser model](https://github.com/Abhey518/Regen-object-detection-analyser) |
+| **Mohan D. / Divyaloshini Mohan**               | `CT/2021/085` | **Frontend Layouts & Documentation Lead**<br>• Developed initial layouts for all application screens<br>• Led the project documentation                                                                                                                                       |
+| **Pahalawaththa P. R. / Pasindu Randima**       | `CT/2021/056` | **Backend & Database Lead**<br>• Guided and implemented backend integration<br>• Database management                                                                                                                                                                          |
+| **Jayamal B. M. / Bhanuka Malitha**             | `CT/2021/058` | **Design & Admin Frontend Layout**<br>• UI design<br>• Guided and developed poster design<br>• Developed initial layout for the Admin dashboard                                                                                                                               |
+| **Wijewardhana P. P. A. / Piyumi Wijewardhana** | `CT/2021/015` | **Design & Documentation Support**<br>• Guided and developed UI design<br>• Poster design<br>• Project documentation support                                                                                                                                                  |
 
 ---
 

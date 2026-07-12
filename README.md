@@ -8,22 +8,13 @@
 
 ## 👥 Group Members & Contributions
 
-| Name                                          | Student ID    | Implemented Module / Responsibilities              |
-| :-------------------------------------------- | :------------ | :------------------------------------------------- |
-| **Abeywardhana A. A. / Arunoda Abeywardhana** | `CT/2021/072` | **Project Lead** • Guided & developed the frontend |
-
-• Developed the backend • Guided & developed the admin dashboard
-• Trained and developed the [garbage classification & proportion analyser model](https://github.com/Abhey518/Regen-object-detection-analyser) |
-| **Mohan D. / Divyaloshini Mohan** | `CT/2021/085` | **Frontend Layouts & Documentation Lead** • Developed initial layouts for all application screens
-• Led the project documentation |
-| **Pahalawaththa P. R. / Pasindu Randima** | `CT/2021/056` | **Backend & Database Lead** • Guided and implemented backend integration
-• Database management |
-| **Jayamal B. M. / Bhanuka Malitha** | `CT/2021/058` | **Design & Admin Frontend Layout** • UI design
-• Guided and developed poster design
-• Developed initial layout for the Admin dashboard |
-| **Wijewardhana P. P. A. / Piyumi Wijewardhana** | `CT/2021/015` | **Design & Documentation Support** • Guided and developed UI design
-• Poster design
-• Project documentation support |
+| Name | Student ID | Implemented Module / Responsibilities |
+| :--- | :--- | :--- |
+| **Abeywardhana A. A. / Arunoda Abeywardhana** | `CT/2021/072` | **Project Lead**<br>• Guided & developed the frontend<br>• Developed the backend<br>• Guided & developed the admin dashboard<br>• Trained and developed the [garbage classification & proportion analyser model](https://github.com/Abhey518/Regen-object-detection-analyser) |
+| **Mohan D. / Divyaloshini Mohan** | `CT/2021/085` | **Frontend Layouts & Documentation Lead**<br>• Developed initial layouts for all application screens<br>• Led the project documentation |
+| **Pahalawaththa P. R. / Pasindu Randima** | `CT/2021/056` | **Backend & Database Lead**<br>• Guided and implemented backend integration<br>• Database management |
+| **Jayamal B. M. / Bhanuka Malitha** | `CT/2021/058` | **Design & Admin Frontend Layout**<br>• UI design<br>• Guided and developed poster design<br>• Developed initial layout for the Admin dashboard |
+| **Wijewardhana P. P. A. / Piyumi Wijewardhana** | `CT/2021/015` | **Design & Documentation Support**<br>• UI design<br>• Poster design<br>• Project documentation support |
 
 ---
 
@@ -90,23 +81,6 @@ The dashboard connects directly to the Supabase database. The central tables uti
 
 ---
 
-## 🎨 Design System
-
-### Color Palette
-
-- **Primary Green:** `#86C13C` - Main brand color
-- **Dark Navy:** `#2C3E50` - Text and sidebar
-- **Light Gray:** `#F8F9FA` - Background
-- **Accent Colors:** Blue, Purple, Orange, Red for status indicators
-
-### Typography
-
-- **Headers:** Bold, clean sans-serif
-- **Body Text:** Readable, accessible fonts
-- **UI Elements:** Consistent sizing and spacing
-
----
-
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
@@ -162,16 +136,6 @@ The application currently runs in standalone mode with mock data. For production
 
 ---
 
-## 📱 Responsive Design
-
-The admin panel is fully responsive and works on:
-
-- **Desktop:** Full dashboard with sidebar navigation
-- **Tablet:** Optimized layout with collapsible sidebar
-- **Mobile:** Touch-friendly interface with bottom navigation
-
----
-
 ## 🔒 Security Features
 
 - **Role-based Access Control** (RBAC) restrict unauthorized users.
@@ -211,6 +175,8 @@ flutter build web --release --web-renderer canvaskit
 
 ## 📄 Project Resources
 
+- **Mobile Application:** [Regen-waste-management-mobile-application](https://github.com/Abhey518/Regen-waste-management-mobile-application)
+- **Garbage Classification Model:** [Regen-object-detection-analyser](https://github.com/Abhey518/Regen-object-detection-analyser)
 - **Abstract:** View our [Project Abstract](docs/Regen-Abstract.jpg)
 - **Project Poster:** View our [Project Poster](docs/Regen%20-%20Project%20Poster.jpg)
 
@@ -219,25 +185,5 @@ flutter build web --release --web-renderer canvaskit
 ## 📄 License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📞 Support
-
-For support and questions:
-
-- **Email:** arunodaabey2001@gmail.com
-- **Issues:** GitHub Issues tab
-
----
-
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with core functionality
-- **v1.1.0** - Added notifications management
-- **v1.2.0** - Enhanced user feedback system
-- **v1.3.0** - Improved analytics dashboard
-
----
 
 Last Updated: July 2025

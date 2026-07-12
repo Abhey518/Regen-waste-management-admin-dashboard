@@ -39,12 +39,12 @@ CREATE INDEX IF NOT EXISTS idx_super_admins_admin_id ON public.super_admins USIN
 CREATE TRIGGER update_admin_timestamp 
   BEFORE UPDATE ON admins 
   FOR EACH ROW 
-  EXECUTE FUNCTION update_timestamp();
+  EXECUTE FUNCTION update_updated_at_column();
 
 CREATE TRIGGER update_super_admin_timestamp 
   BEFORE UPDATE ON super_admins 
   FOR EACH ROW 
-  EXECUTE FUNCTION update_timestamp();
+  EXECUTE FUNCTION update_updated_at_column();
 
 -- Insert a default super admin (you can change the credentials)
 INSERT INTO public.super_admins (admin_id, password) 

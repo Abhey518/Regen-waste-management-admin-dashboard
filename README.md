@@ -82,8 +82,9 @@ The dashboard connects directly to the Supabase database. The central tables uti
 
 ### Step 1: Database Initialization
 
-* Ensure the Supabase database instance has been configured using the schema definition script in the mobile client project:
-  `database/schema.sql`
+1. Configure the core database using the main schema definition script in the Mobile Application project: `database/schema.sql`.
+2. Configure the admin-specific auth tables using the dashboard script located in:
+   * **[database/database_schema.sql](database/database_schema.sql)**
 
 ---
 
@@ -107,6 +108,48 @@ The dashboard connects directly to the Supabase database. The central tables uti
 
 ---
 
+## 🔧 Configuration
+
+### Environment Setup
+The application currently runs in standalone mode with mock data. For production, connect it to Supabase using:
+* Option A (Recommended): The environment variables in `.env` (handled at build time).
+* Option B: Hardcoding credentials directly in your service initialization:
+  ```dart
+  const String SUPABASE_URL = 'your-supabase-url';
+  const String SUPABASE_ANON_KEY = 'your-anon-key';
+  ```
+
+---
+
+## 📱 Responsive Design
+
+The admin panel is fully responsive and works on:
+* **Desktop:** Full dashboard with sidebar navigation
+* **Tablet:** Optimized layout with collapsible sidebar
+* **Mobile:** Touch-friendly interface with bottom navigation
+
+---
+
+## 🔒 Security Features
+
+* **Role-based Access Control** (RBAC) restrict unauthorized users.
+* **Secure Authentication** with session management.
+* **Input Validation** and sanitization.
+* **XSS Protection** for user-generated content.
+* **CSRF Protection** for forms.
+
+---
+
+## 🌍 Notification System Integration
+
+The admin panel is designed to work with the ReGen app's notification service, supporting the following types:
+* `general` - Default notifications
+* `pickup` - Waste pickup related
+* `urgent` - High priority alerts
+* `announcement` - Official announcements
+
+---
+
 ## 🚀 How to Run the Application
 
 ### Running Local Development Debug:
@@ -121,64 +164,6 @@ flutter build web --release --web-renderer canvaskit
 
 ---
 
-## 🎨 Design System
-
-### Color Palette
-- **Primary Green:** `#86C13C` - Main brand color
-- **Dark Navy:** `#2C3E50` - Text and sidebar
-- **Light Gray:** `#F8F9FA` - Background
-- **Accent Colors:** Blue, Purple, Orange, Red for status indicators
-
-### Typography
-- **Headers:** Bold, clean sans-serif
-- **Body Text:** Readable, accessible fonts
-- **UI Elements:** Consistent sizing and spacing
-
-## 🔧 Configuration
-
-### Environment Setup
-The application currently runs in standalone mode with mock data. For production:
-
-1. **Configure Backend Integration**
-   - Update API endpoints in service files
-   - Configure Supabase connection
-   - Set up authentication providers
-
-2. **Environment Variables**
-   ```dart
-   // Add to main.dart or config file
-   const String API_BASE_URL = 'your-api-url';
-   const String SUPABASE_URL = 'your-supabase-url';
-   const String SUPABASE_ANON_KEY = 'your-anon-key';
-   ```
-
-## 📱 Responsive Design
-
-The admin panel is fully responsive and works on:
-- **Desktop:** Full dashboard with sidebar navigation
-- **Tablet:** Optimized layout with collapsible sidebar
-- **Mobile:** Touch-friendly interface with bottom navigation
-
-## 🔒 Security Features
-
-- **Role-based Access Control** (RBAC)
-- **Secure Authentication** with session management
-- **Input Validation** and sanitization
-- **XSS Protection** for user-generated content
-- **CSRF Protection** for forms
-
-## 🌍 Notification System Integration
-
-The admin panel is designed to work with the ReGen app's notification service.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📄 Project Resources
 * **Abstract:** View our [Project Abstract](docs/Regen-Abstract.jpg)
 * **Project Poster:** View our [Project Poster](docs/Regen%20-%20Project%20Poster.jpg)
@@ -187,20 +172,5 @@ The admin panel is designed to work with the ReGen app's notification service.
 
 ## 📄 License
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📞 Support
-
-For support and questions:
-- **Email:** arunodaabey2001@gmail.com
-- **Issues:** GitHub Issues tab
-
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with core functionality
-- **v1.1.0** - Added notifications management
-- **v1.2.0** - Enhanced user feedback system
-- **v1.3.0** - Improved analytics dashboard
 
 Last Updated: July 2025
